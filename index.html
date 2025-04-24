@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles\stylesheet.css">
+    <script src="script\calc.js" defer></script>
+    <title>The Math Center!</title>
+    
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <nav>
+                <img src="">
+            <ul class="head">
+                <li>Start learn</li>
+                <li>graphing calculator</li>
+                <li>Forms</li>
+                <li>about</li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+      <div onmouseenter="hovercalcicon(1)" onclick="hovercalcicon(0)" class="iconcalc">
+        <img class="calcicon">
+      </img>
+
+      </div>
+    <div onmouseleave="hovercalcicon(0)" class="lateral-bar">
+      
+        <div class="calc">
+       <h1>CALC!</h1>
+       <p onclick="writexp()" id="result"></p>
+       <div class="buttontable">
+        <table class="tablecalc">
+            <table class="tablecalc">
+                <tr>
+                  <td><button onclick="clean()">C</button></td>
+                  <td><button onclick="result('(')">(</button></td>
+                  <td><button onclick="result(')')">)</button></td>
+                  <td><button onclick="result('/')">/</button></td>
+                  <td><button onclick="result('*')">*</button></td>
+                </tr>
+                <tr>
+                  <td><button onclick="result('^')">^</button></td>
+                  <td><button onclick="result(7)">7</button></td>
+                  <td><button onclick="result(8)">8</button></td>
+                  <td><button onclick="result(9)">9</button></td>
+                  <td><button onclick="result('+')">+</button></td>
+                </tr>
+                <tr>
+                  <td><button onclick="result('c')">c</button></td>
+                  <td><button onclick="result(4)">4</button></td>
+                  <td><button onclick="result(5)">5</button></td>
+                  <td><button onclick="result(6)">6</button></td>
+                  <td><button onclick="result('-')">-</button></td>
+                </tr>
+                <tr>
+                  <td><button onclick="result('c')">c</button></td>
+                  <td><button onclick="result(1)">1</button></td>
+                  <td><button onclick="result(2)">2</button></td>
+                  <td><button onclick="result(3)">3</button></td>
+                  <td rowspan="2" ><button id="enter" onclick="calc()" style="height: 84px;"  >=</button></td>
+                </tr>
+                <tr>
+                  <td><button onclick="result('c')">c</button></td>
+                  <td colspan="2"><button onclick="result(0)" style="width:84px;">0</button></td>
+                  <td><button onclick="result('.')">.</button></td>
+                  
+                </tr>
+              </table>
+              
+    </div>
+    </div>
+</div>
+    <div id="body">
+    <h1>Welcome to The Math Center.</h1>
+    <h1 id="id01">seu troxa</h1>
+
+</body>
+</html>

@@ -7,6 +7,8 @@ header#header{
     background-color:rgb(107, 107, 221) ;
     display: flex;
     justify-content: center;
+    box-shadow: 0px 5px 10px rgb(20, 9, 29);
+    opacity: 0.9;
 }
 
 ul.head{
@@ -37,27 +39,34 @@ body{
     padding: 0;
     margin:0;
     transition: 0.3s;
+    box-shadow: 0px 5px 10px rgb(20, 9, 29);
+    opacity: 0.99;
 }
-
+/*
 .lateral-bar:hover{
     background-color:rgb(107, 107, 221) ;
     position: fixed;
     transition: 0.3s;
     width: 300px;
 }
-
+*/
 .calc{
     margin-top: 20px;
     margin-left: 20px;
     width: 250px;
-    height: 340px;
+    height: 360px;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgba(61, 55, 105, 0.7);
+    box-shadow: 0px 5px 10px rgb(20, 9, 29);
+    opacity: 0.99;
+    
 }
 
 .calc h1{
-    margin: 0;
-    margin-bottom: 20px;
+    padding-top: 10px;
+    margin: 0px;
+    
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -67,13 +76,18 @@ body{
 
 .tablecalc button{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
     width: 40px;
     height: 40px;
     transition: 0.3s;
     box-shadow: 1 white;
     border:0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px black;
     background-color: white;
     cursor: pointer;
+    opacity: 1;
+
 }
 
 .tablecalc button:hover{
@@ -87,10 +101,38 @@ body{
 .calc p#result{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(0, 0, 0);
+    font-size:16pt;
     background-color: white;
     width: 210px;
     height: 30px;
     margin-left: 20px;
     text-align: right;
 
+}
+.calc p#result:hover{
+    cursor: text;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgb(228, 228, 228);
+    width: 210px;
+    height: 30px;
+    margin-left: 20px;
+    text-align: right;
+
+}
+
+.calcicon{
+    position: absolute;
+    color:white;
+    width:50px;
+    height:50px;
+    padding: 10px;
+    right: 0vh;
+    bottom: 60vh;
+    background-color: rgb(107, 107, 221);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor:"none";
+    box-shadow: 0px 5px 10px rgb(20, 9, 29);
+    opacity: 0.9;
 }
